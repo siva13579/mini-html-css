@@ -1,0 +1,167 @@
+*{
+    padding:0;
+    
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+    
+}
+
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+    line-height: 1;
+    background-color:grey;
+
+}
+
+.hero-section{
+    
+     width:500px;
+     height:400px;
+    display:flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+        overflow:hidden ;
+        
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px -3px #020202;
+    font-size: 1.8rem;
+   margin-left:400px ;
+   margin-bottom: 60px;
+    padding-left:10px;
+
+}
+
+.hero-section img{
+
+    padding-left:30px;
+}
+
+
+.hero-section h2,h1{
+    
+    box-shadow:rgba(50,50,50,0.23) 0px 6px 12px -2px,rgba(0,0,0,0.3) 0px 3px 7px -3px ;
+    color:rgb(252, 248, 248);
+    padding:10px;
+}
+.hero-section div{
+    transform: translate(-33px,76px);
+}
+.black-box-section{
+    background-color: #000;
+    font-size :80px;
+    font-weight:400;
+    margin-bottom:56px;
+
+    
+    text-align: center;
+}
+.black-box-section span ,h2,h3{
+    font-size:24px;
+    color:white;
+    padding:10px;
+    margin:10px;
+    
+
+    text-align: center;
+
+}
+.card-container{
+    
+    margin:4.8rem 0;
+    
+}
+.items{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+.items:hover{
+    cursor:pointer;
+  
+}
+
+.content-items{
+    display:grid;
+    grid-template-columns: auto minmax(340px,1fr);
+    margin-top:1.6rem;
+    
+   
+}
+.content-items h2,p{
+    text-align: center;
+
+
+}
+.img-items{
+      max-width: 340px;
+      height:400px;
+      border-radius: 11px;
+      box-shadow: rgba(50,50,50,0.23) 0px 6px 12px -2px,rgba(0,0,0,0.3) 0px 3px 7px -3px;
+ 
+}
+.img-items img{
+    width:100%;
+    border-radius: 11px 11px 0 0;
+      gap:10px;
+}
+.bottom-card{
+     
+     display: flex;
+     margin:10px;
+     padding :10px;
+
+}
+.contact{
+    background-color:green;
+    padding: 8px;
+    border-radius: 10px;
+    color:white;
+    
+    
+}
+.about{
+    background-color: brown;
+    margin-left:8px;
+    padding:8px;
+    color:white;
+    border-radius: 10px;
+}
+@media screen and (max-width:768px){
+    .hero-section{
+        font-size: 1rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .black-box-section {
+        display: block;
+    }
+
+    .black-box-section h3{
+        font-size: 3.2rem;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        gap:4rem;
+    }
+    .bottom-card{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+}
